@@ -35,5 +35,44 @@ norm = data['Close']/data['Close'].iloc[0]
 
 print(norm)
 
+data['Daily chg'] = data['Close'] - data['Open']
+
+print(data.head())
+
+data['Normalized'] = data['Close']/data['Close'].iloc[0]
+
+print(data.head())
+
+print(data.tail())
+
+print(data['Close'].min())
+
+print(data.min())
+
+print(data['Close'].argmin())
+
+print(data.iloc[33:40])
+
+print(data['Normalized'].min())
+
+print(data['Normalized'].argmin())
+
+print(data['Close'].max())
+
+print(data['Close'].argmax())
+
+print(data.iloc[251:])
+
+print(data['Close'].mean())
+
+print(data.drop(labels=['High', 'Low', 'Adj Close', 'Volume'], axis = 1, inplace=True))
+
+print(data.head())
+
+
+
+
+
+
 
 
