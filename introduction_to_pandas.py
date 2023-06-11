@@ -14,3 +14,26 @@ print(data.loc[:"2020-07-01"])
 print(data.iloc[0])
 
 print(data.iloc[-1])
+
+print(type(data))
+
+print(data['Close'])
+
+print(type(data['Close']))
+
+daily_chg = data['Close'] - data['Open']
+
+print(type(daily_chg))
+
+daily_pct_chg = ((data['Close'] - data['Open'])/data['Open'])*100
+
+print(daily_pct_chg)
+
+print(data['Close'].iloc[0],data['Close'].iloc[-1])
+
+norm = data['Close']/data['Close'].iloc[0]
+
+print(norm)
+
+
+
